@@ -1,55 +1,19 @@
-@keyframes fadeIn {
-    from {
-        opacity: 0
-    }
-
-    to {
-        opacity: 1;
-    }
+* {
+    font-family: sans-serif;
 }
 
-ul li {
-    background-color: #777;
-    color: #fff;
-    /* transition: background-color 2s; */
-    
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 35px auto 0;
 }
 
-ul li:not(:last-child) {
-    margin-bottom: 10px;
+#contact-form > * {
+    padding: 6px 10px;
+    margin-bottom: 5px;
 }
 
-.first-li:hover {
-    background-color: orange;
-}
-
-ul li:nth-child(3) {
-    background-color: teal;
-    position: relative;
-}
-
-ul li:nth-child(3):hover:after {
-    content: 'some text';
-    position: absolute;
-    top: -40px;
-    left: 0;
-    z-index: 5;
-    padding: 8px 15px;
-    border: 1px solid black;
-    background: gray;
-    color: #fff;
-    animation: fadeIn .4s;
-}
-
-ul li:nth-child(6):active {
-    background-color: dodgerblue;
-}
-
-ul:last-child {
-    background-color: tomato;
-}
-
-#name-input:focus {
-background-color: maroon;
-color: #fff;
+#contact-form h2 {
+    text-align: center;
 }
